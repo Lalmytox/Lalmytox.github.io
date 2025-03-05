@@ -1,0 +1,89 @@
+﻿.card-group{
+    width : 80% ; 
+    margin: 30px auto 0 auto ; 
+}
+
+/* -------------- début barre de navigation --------------*/
+
+.navbar { 
+    background-color: lightgray !important ; 
+    color : white !important ;
+}
+
+.nav-link { 
+    color: black !important ;
+}
+
+.navbar-brand {
+    color: darkgoldenrod ;
+}
+
+/* -------------- fin barre de navigation -------------- */
+
+header img {
+    width : 100%;
+    height : auto;
+    max-height : 400px;
+}
+
+body{
+    background-color: rgba(252, 226, 178, 0.801);
+}
+
+/* -------------- section_principale -------------- */
+#section_principale
+{
+    background-color: rgba(254, 234, 197, 0.801);
+    border: 1px dotted black;
+    width: 80% ;
+    margin: 15px auto 15px auto;
+
+    padding : 2%;
+}
+
+p{
+    border: 1px dotted black;
+}
+
+div{
+    /*border: 1px dotted blue;*/
+    border : none;
+}
+
+#section_principale button {
+    
+    border-radius: 10%;
+
+    background-color: rgba(76, 175, 80, 0);
+    border: 2px solid black; 
+    color: black ; 
+}
+
+#section_principale a /*putain comment je centre ce truc ?*/
+{
+    width : 20%;
+    margin: 0px auto 0px auto;
+
+    border: 2px solid red; 
+}
+
+/* -------------- section_principale -------------- */
+
+/* -------------- footer -------------- */
+
+footer
+{
+    border: 1px dotted black;
+    margin: 10px auto 0px auto;
+    background-color: lightgray !important ;
+    color : black !important ;
+}
+
+footer p {
+    display: block;
+    width: 20% ;
+    margin: 10px auto 0px auto;
+    /*border: 1px dotted black;*/
+}
+
+/* -------------- footer -------------- */
