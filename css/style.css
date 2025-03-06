@@ -1,17 +1,132 @@
-﻿.card-group{
-    width : 80% ; 
-    margin: 30px auto 0 auto ; 
+﻿body{
+    /*background-color: rgba(252, 226, 178, 0.801);*/
+    background-color: #F9EFDC;
+    /*background-image: url('/image/background_bis.png') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important; 
+    background-position: center !important; 
+    */
 }
+
+header img {
+    width : 100%;
+    height : auto;
+    max-height : 400px;
+}
+
+
+/* -------------- cards --------------*/
+
+#profile-pic {
+    width: 300px;
+    height: 340px;
+    margin: 0 auto 10px;
+    border-radius: 90%;
+    display: block;
+}
+
+.card{ /*la card entière*/
+    width : 80% ; 
+    margin: 30px auto 0px auto ; 
+    text-align: center;
+    padding : 1%;
+    box-shadow : 2px 2px 1px black;
+    background-color :rgb(255, 255, 255, 0.8)
+    
+}
+
+.card-img-top {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 10px;
+    border-radius: 90%;
+    display: block;
+    /*
+    width : 40% ; 
+    height : 300px;
+    margin: 30px auto 0px auto ; 
+    */
+}
+
+.card-img-top-projets {
+    width: 250px;
+    height: 300px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.card-img-top-exp {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 10px;
+    border-radius: 30%;
+    display: block;
+
+}
+
+.card-img-logo
+{
+    width: 3%;
+    height: 3%;
+    margin-inline: 5%;
+    display : inline-block;
+}
+
+/*
+.card-img-logo-container
+{
+    width: 3%;
+    height: 3%;
+    margin-inline: 5%;
+    display : inline-block;
+}
+*/
+
+.card-body { /*l'encadré avec le texte descriptif*/
+    width : 80% ; 
+    border: 0.5px dotted lightgray;
+    margin: 15px auto 15px auto ; 
+    box-shadow : 2px 2px 1px black;
+    background-color: whitesmoke;
+}
+
+.card .btn
+{
+    margin-bottom: 10px;
+}
+
+.card-img-logo{
+    transition: transform 1s;
+}
+
+.card-img-logo:hover{
+    transform: rotate(360deg);
+}
+
+#section-projets{
+    background-color: rgba(255, 255, 255, 0.255);
+    border: 0.5px dotted red;
+
+    text-align: center;
+}
+
+#section-projets .card-img-logo{
+    width: 10%;
+    height: 10%;
+}
+
+/* -------------- cards --------------*/
 
 /* -------------- début barre de navigation --------------*/
 
 .navbar { 
-    background-color: lightgray !important ; 
-    color : white !important ;
+    background-color: black !important ; 
+    color : rgb(255, 255, 255) !important ;
+    margin-bottom: 30px !important;
 }
 
 .nav-link { 
-    color: black !important ;
+    color: white !important ;
 }
 
 .navbar-brand {
@@ -20,70 +135,36 @@
 
 /* -------------- fin barre de navigation -------------- */
 
-header img {
-    width : 100%;
-    height : auto;
-    max-height : 400px;
-}
-
-body{
-    background-color: rgba(252, 226, 178, 0.801);
-}
-
-/* -------------- section_principale -------------- */
-#section_principale
-{
-    background-color: rgba(254, 234, 197, 0.801);
-    border: 1px dotted black;
-    width: 80% ;
-    margin: 15px auto 15px auto;
-
-    padding : 2%;
-}
-
-p{
-    border: 1px dotted black;
-}
-
-div{
-    /*border: 1px dotted blue;*/
-    border : none;
-}
-
-#section_principale button {
-    
-    border-radius: 10%;
-
-    background-color: rgba(76, 175, 80, 0);
-    border: 2px solid black; 
-    color: black ; 
-}
-
-#section_principale a /*putain comment je centre ce truc ?*/
-{
-    width : 20%;
-    margin: 0px auto 0px auto;
-
-    border: 2px solid red; 
-}
-
-/* -------------- section_principale -------------- */
 
 /* -------------- footer -------------- */
 
 footer
 {
     border: 1px dotted black;
-    margin: 10px auto 0px auto;
-    background-color: lightgray !important ;
-    color : black !important ;
+    margin: 30px auto 0px auto;
+    padding-bottom: 10px;
+    background-color: black !important ;
+    color : white !important ;
 }
 
 footer p {
     display: block;
     width: 20% ;
-    margin: 10px auto 0px auto;
+    margin: 10px 70% 0px auto;
+    color : white;
     /*border: 1px dotted black;*/
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.formulaire-popup {
+    width: 80%;
+    margin-left: 10%;
+    padding: 1%;
+    background-color: rgb(169, 169, 169, 0.7);
+    display : none ;
 }
 
 /* -------------- footer -------------- */

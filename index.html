@@ -4,7 +4,7 @@
 <head>
     <title>E-portfolio - William Lefebvre (2025)</title>
     <meta charset="utf-8"> <!-- Obligatoire -->
-    <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- Obligatoire -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="css_boostrap/bootstrap.rtl.min.css"> <!-- css de boostrap -->
@@ -12,35 +12,25 @@
 
 </head>
 <body>
-    <header>
-        <img src="image/coruscant-background.jpg" height="300"  alt="Paysage de savane. Google référence bien les alt.">
-    </header>
 
     <!-- ********************** début de la barre de navigation ********************** -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="acceuil.html">Accueil</a>
+            <a class="navbar-brand" href="index.html">Accueil</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="formation.html">Formation</a>
+                    </li>-->
                     <li class="nav-item">
-                        <a class="nav-link" href="competences.html">Compétences</a>
+                        <a class="nav-link" href="competences.html">Projets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Expériences</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projets
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Projet 1</a></li>
-                            <li><a class="dropdown-item" href="#">Projet 2</a></li>
-                            <li><a class="dropdown-item" href="#">Projet 3</a></li>
-                        </ul>
+                        <a class="nav-link" href="experiences.html">Expériences</a>
                     </li>
                 </ul>
             </div>
@@ -48,63 +38,133 @@
     </nav>
 
     <!-- ********************** fin de la barre de navigation   ********************** -->
+    
+    <!-- **********************    début du groupe de carte     ********************** -->
 
-    <!-- ********************** début section principale ********************** -->
-    <section id="section_principale">
-        <h2>Présentation personnelle</h2>
+    <div class="card mb-3">
+        <img src="image/william_lefebvre.png" alt="william_lefebvre" id="profile-pic">
+        <div class="card-body">
+            <h5 class="card-title">Qui suis-je ?</h5>
+            <p class="card-text">
+                Depuis la rentrée 2023, je suis un étudiant en BUT SD. J'étudie les statistiques et le traitement des données.
+            </p>
+            <p>
+                Ayant suivi des études en sciences sociales et économiques, possédant des antécédents associatifs et étant attiré par l'écologie et l'environnement, 
+                je souhaite mettre ma curiosité, mon attention et mes futures compétences au service du plus grand nombre.
+                <br> 
+            </p>
+            <p>
+                Je suis persuadé que la data est un outil qui peut être développé et utilisé pour aider à la réalisation d'initiatives concrètes. 
+            </p>
+        </div>
+        <!--<a href = "formation.html">
+            <button type="button" class="btn btn-outline-primary">En savoir plus</button>
+        </a>-->
+    </div>
 
-        <nav> 
-            <ul> 
-                
-                <div>
-                    <li> Qui suis-je ? </li>
-                    <br>
-                    <p>
-                        Depuis la rentrée 2023, je suis un étudiant en science des données et statistiques.
-                        <br> 
-                        Ayant suivi des études en sciences sociales et economiques, des antécédents associatifs et un attrait pour l'environnement, 
-                        je souhaite mettre ma curiosité, mon attention et mes futures compétences au service du plus grand nombre.
-                        <br> 
-                        Je suis persuadé que la data est un outil qui peut être développé et utilisé pour aider à la réalisation d'initiatives concrètes. 
-                    </p>
-                    <a href = "competences.html">
-                        <button type="button" >En savoir plus</button>
-                    </a>
-
-                </div>
-                
-                    <li> Compétences professionnelles  </li>
+    <div class="card  mb-3">
+        <img src="image/labor.png" class="card-img-top" alt="logo_compétences">
+        <div class="card-body">
+            <h5 class="card-title">Compétences professionnelles</h5>
+            <p class="card-text">Les compétences que je possède sont des compétences techniques (informatiques et statistiques).
+                <br> C'est également des compétences humaines.
                 <br>
-                <p>
-                    Les compétences que je possède sont des compétences techniques - avec des compétences informatique  avec différents outils sur lesquels j'ai été formé et des compétences statistiques - mais ce sont également des compétences humaines.
-                    <br>
-                    Consultez-ci dessous différents projets réalisé au cours de mon BUT SD qui mettent en avant ces compétences.
-                </p>
-                <a href = "competences.html">
-                    <button type="button" >En savoir plus</button>
-                </a>
+            </p>
+            <p>
+                Consultez-ci dessous différents projets réalisé au cours de mon BUT SD qui mettent en avant ces compétences.
+            </p>
+        </div>
+        
+        <div class="card-body">
+            
+            <h5 class="card-title">Logiciels</h5>
+            <p class="card-text"></p>
+            <img src="image/logo_gcp.png" class="card-img-logo" alt="logo_gcp" title="Google Cloup Platform">
+            <img src="image/logo_sql.png" class="card-img-logo" alt="logo_sql" title="SQL">
+            <img src="image/logo_sas.png" class="card-img-logo" alt="logo_sas" title="SAS">
+            <img src="image/logo_R.png" class="card-img-logo" alt="logo_R" title="R">
+            <img src="image/logo_powerbi.png" class="card-img-logo" alt="logo_powerbi" title="PowerBi">
+            <img src="image/logo_access.png" class="card-img-logo" alt="logo_access" title="Access">
+            <img src="image/logo_office.png" class="card-img-logo" alt="logo_office" title="Suite Office">
+            
+            
+        </div>
 
-                <li> Expériences </li>
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
-                    Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
-                    Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
-                    Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
-                    Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-                </p>
-                
-            </ul>
-        </nav>
+        <a href = "competences.html">
+            <button type="button" class="btn btn-outline-primary">En savoir plus</button>
+        </a>
+    </div>
 
-    </section>
-    <!-- ********************** fin section principale ********************** -->
+    <div class="card mb-3">
+        <img src="image/xp.png" class="card-img-top" alt="logo_expériences">
+        <div class="card-body">
+          <h5 class="card-title">Expériences</h5>
+          <p class="card-text">
+            Etudiant en alternance, mon expérience principale est cette alternance d'assistant data-analyst à FnacDarty.
+            <br> 
+            Néanmoins, j'ai pu m'engager dans quelques associations qui me tiennent à coeur.
+          </p>
+          <p>
+            Consultez-ci dessous quelques expériences marquantes.
+        </p>
+        </div>
+        <a href = "experiences.html">
+            <button type="button" class="btn btn-outline-primary">En savoir plus</button>
+        </a>
+    </div>
+
+    <!-- **********************     fin du groupe de carte      ********************** -->
+
+    <!-- *************************     footer & co     ************************* -->
 
     <footer>
-        <p>LinkedIn</p>
-        <p>Instagram</p>
-        <p>Facebook</p>
+
+        <a onclick="openForm()" >
+            <p>Me contacter</p>
+        </a>
+    <!--<button type="button" class="mbt" onclick="openForm()">Envoyer</button>-->
+
+        <div class="formulaire-popup" id="myform">
+            <form class="formulaire-container" >
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Votre email :</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john.doe@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="text" class="form-label">Votre texte :</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            
+                <button type="submit" class="bouton-connexion" onclick="closeForm()">Envoyer</button>
+                <button type="submit" class="bouton-annulation" onclick="closeForm()">Annuler</button>
+    
+            </form>
+        </div>
+
+        <a target="_blank" href="https://www.linkedin.com/in/william-lefebvre-a924a1187?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B65AH%2BEnwTQqNJfKlkhYw4g%3D%3D">
+            <p>LinkedIn</p>
+        </a>
+        <a target="_blank" href="https://github.com/Lalmytox">
+            <p>GitHub</p>
+        </a>
     </footer>
+
+    <script>
+        function openForm()
+        {
+            document.getElementById("myform").style.display = "block"; /*affiche en tant que block*/ 
+        }
+        function closeForm() {
+            document.getElementById("myform").style.display = "none"; /*ferme le block*/ 
+        }
+    </script>
+
+    <!-- **********************     footer & co      ********************** -->
+
+
+    <!--Attention, ne pas effacer la ligne du dessous-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
