@@ -16,6 +16,7 @@
 .content {
     flex: 1;
     padding: 20px;
+    min-height: 100vh; 
 }
 
 header img {
@@ -133,6 +134,11 @@ header img {
 
 .navbar-brand {
     color: darkgoldenrod ;
+}
+
+.navbar-toggler-icon
+{
+    color : whitesmoke;
 }
 
 
