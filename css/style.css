@@ -8,6 +8,14 @@
     background-position: center !important; 
     */
 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
 }
 
 header img {
@@ -136,8 +144,10 @@ footer
     border: 1px dotted black;
     margin: auto auto 0px auto;
     padding-bottom: 10px;
+    width: 100%;
     background-color: black !important ;
     color : white !important ;
+
 }
 
 footer p {

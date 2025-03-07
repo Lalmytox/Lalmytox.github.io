@@ -3,12 +3,10 @@
 <html>
 <head>
     <title>E-portfolio - William Lefebvre (2025)</title>
-    <meta charset="utf-8"> <!-- Obligatoire -->
-    <link rel="stylesheet" type="text/css" href="CSS/style.css"> <!-- Obligatoire -->
+    <meta charset="utf-8"> 
 
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css" href="css_boostrap/bootstrap.rtl.min.css"> <!-- css de boostrap -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">  <!-- css perso, en dernier il a le dernier mot -->
+    <link rel="stylesheet" type="text/css" href="css_boostrap/bootstrap.rtl.min.css"> <!-- les css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
 
 </head>
 <body>
@@ -39,12 +37,51 @@
 
     <!-- ********************** fin de la barre de navigation   ********************** -->
 
+    <!-- *************************     footer & co     ************************* -->
+
     <footer>
-        <p>Me contacter</p>
-        <p>LinkedIn</p>
-        <p>Instagram</p>
-        <p>Facebook</p>
+
+        <a onclick="openForm()" >
+            <p>Me contacter</p>
+        </a>
+
+        <div class="formulaire-popup" id="myform">
+            <form class="formulaire-container" >
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Votre email :</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john.doe@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="text" class="form-label">Votre texte :</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            
+                <button type="submit" class="bouton-connexion" onclick="closeForm()">Envoyer</button>
+                <button type="submit" class="bouton-annulation" onclick="closeForm()">Annuler</button>
+    
+            </form>
+        </div>
+
+        <a target="_blank" href="https://www.linkedin.com/in/william-lefebvre-a924a1187?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B65AH%2BEnwTQqNJfKlkhYw4g%3D%3D">
+            <p>LinkedIn</p>
+        </a>
+        <a target="_blank" href="https://github.com/Lalmytox">
+            <p>GitHub</p>
+        </a>
     </footer>
+
+    <script>
+        function openForm()
+        {
+            document.getElementById("myform").style.display = "block"; /*affiche en tant que block*/ 
+        }
+        function closeForm() {
+            document.getElementById("myform").style.display = "none"; /*ferme le block*/ 
+        }
+    </script>
+
+    <!-- **********************     footer & co      ********************** -->
 
 
     <!--Attention, ne pas effacer la ligne du dessous-->
