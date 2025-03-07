@@ -1,11 +1,13 @@
 ﻿body{
     /*background-color: rgba(252, 226, 178, 0.801);*/
     background-color: #F9EFDC;
+
     /*background-image: url('/image/background_bis.png') !important;
     background-size: cover !important;
     background-repeat: no-repeat !important; 
     background-position: center !important; 
     */
+
 }
 
 header img {
@@ -14,16 +16,8 @@ header img {
     max-height : 400px;
 }
 
-
+/* ---------------- 2 -----------------*/
 /* -------------- cards --------------*/
-
-#profile-pic {
-    width: 300px;
-    height: 340px;
-    margin: 0 auto 10px;
-    border-radius: 90%;
-    display: block;
-}
 
 .card{ /*la card entière*/
     width : 80% ; 
@@ -33,6 +27,30 @@ header img {
     box-shadow : 2px 2px 1px black;
     background-color :rgb(255, 255, 255, 0.8)
     
+}
+
+.card-body { /*l'encadré avec le texte descriptif*/
+    width : 80% ; 
+    border: 0.5px dotted lightgray;
+    margin: 15px auto 15px auto ; 
+    box-shadow : 2px 2px 1px black;
+    background-color: whitesmoke;
+}
+
+.card .btn
+{
+    margin-bottom: 10px;
+}
+
+/* ------ 2.2 -------*/
+/* -- cards images --*/
+
+#profile-pic {
+    width: 300px;
+    height: 340px;
+    margin: 0 auto 10px;
+    border-radius: 90%;
+    display: block;
 }
 
 .card-img-top {
@@ -66,36 +84,10 @@ header img {
 
 .card-img-logo
 {
-    width: 3%;
-    height: 3%;
+    width: 3%; /*3% - 25px*/
+    height: auto;
     margin-inline: 5%;
     display : inline-block;
-}
-
-/*
-.card-img-logo-container
-{
-    width: 3%;
-    height: 3%;
-    margin-inline: 5%;
-    display : inline-block;
-}
-*/
-
-.card-body { /*l'encadré avec le texte descriptif*/
-    width : 80% ; 
-    border: 0.5px dotted lightgray;
-    margin: 15px auto 15px auto ; 
-    box-shadow : 2px 2px 1px black;
-    background-color: whitesmoke;
-}
-
-.card .btn
-{
-    margin-bottom: 10px;
-}
-
-.card-img-logo{
     transition: transform 1s;
 }
 
@@ -103,7 +95,10 @@ header img {
     transform: rotate(360deg);
 }
 
-#section-projets{
+/* ------ 2.3 -------*/
+/* -- section-projets --*/
+
+#section-projets{ /*l'encadré qui contient la card des projets*/
     background-color: rgba(255, 255, 255, 0.255);
     border: 0.5px dotted red;
 
@@ -111,12 +106,11 @@ header img {
 }
 
 #section-projets .card-img-logo{
-    width: 10%;
-    height: 10%;
+    width: 30px; /*10%*/
+    height: 30px;
 }
 
-/* -------------- cards --------------*/
-
+/* ------------------------- 3 ----------------------------*/
 /* -------------- début barre de navigation --------------*/
 
 .navbar { 
@@ -133,9 +127,8 @@ header img {
     color: darkgoldenrod ;
 }
 
-/* -------------- fin barre de navigation -------------- */
 
-
+/* ---------------- 4 ------------------*/
 /* -------------- footer -------------- */
 
 footer
@@ -145,6 +138,7 @@ footer
     padding-bottom: 10px;
     background-color: black !important ;
     color : white !important ;
+    bottom:0;
 }
 
 footer p {
@@ -159,12 +153,10 @@ footer a{
     text-decoration: none;
 }
 
-.formulaire-popup {
+.formulaire-popup { /*le formulaire de contact*/
     width: 80%;
     margin-left: 10%;
     padding: 1%;
     background-color: rgb(169, 169, 169, 0.7);
     display : none ;
 }
-
-/* -------------- footer -------------- */
