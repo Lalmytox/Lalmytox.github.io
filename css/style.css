@@ -98,7 +98,7 @@ header img {
 /* ------ 2.3 -------*/
 /* -- section-projets --*/
 
-#section-projets{ /*l'encadré qui contient la card des projets*/
+#section-projets{ /*l'encadré qui contient la card des projets / des expériences*/
     background-color: rgba(255, 255, 255, 0.255);
     border: 0.5px dotted red;
 
@@ -134,11 +134,10 @@ header img {
 footer
 {
     border: 1px dotted black;
-    margin: 30px auto 0px auto;
+    margin: auto auto 0px auto;
     padding-bottom: 10px;
     background-color: black !important ;
     color : white !important ;
-    bottom:0;
 }
 
 footer p {
@@ -151,6 +150,7 @@ footer p {
 
 footer a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 .formulaire-popup { /*le formulaire de contact*/
