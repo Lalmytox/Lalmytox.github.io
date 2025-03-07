@@ -13,7 +13,7 @@
     flex-direction: column;
 }
 
-.content {
+.content { /*param pour s'assurer que le footer est bien en bas de page*/
     flex: 1;
     padding: 20px;
     min-height: 100vh; 
@@ -119,8 +119,8 @@ header img {
     height: 30px;
 }
 
-/* ------------------------- 3 ----------------------------*/
-/* -------------- début barre de navigation --------------*/
+/* -------------------- 3 --------------------------*/
+/* -------------- barre de navigation --------------*/
 
 .navbar { 
     background-color: black !important ; 
@@ -136,9 +136,13 @@ header img {
     color: darkgoldenrod ;
 }
 
-.navbar-toggler-icon
-{
-    color : whitesmoke;
+.navbar-toggler {
+    background-color: black; /* Changer la couleur du fond */
+    border-color: lightgray; /* Changer la couleur de la bordure */
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%); /* Inverser la couleur (utile pour icône par défaut) */
 }
 
 
