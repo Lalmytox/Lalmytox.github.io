@@ -31,7 +31,7 @@ header img {
 .card-group {
     display: flex !important;
     flex-direction: row !important;
-    gap: 10px; 
+    gap: 2px; 
 }
 
 
