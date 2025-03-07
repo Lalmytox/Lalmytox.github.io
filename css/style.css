@@ -29,14 +29,28 @@ header img {
 /* -------------- cards --------------*/
 
 .card-group {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 10px; 
 }
 
 
 @media screen and (max-width: 780px) and (min-width: 0) { /* Mode mobile (cartes empilées) */
+
+    /*
+    body{
+        background-color: green !important;
+    }
+    */ /*le media screen qui ne fonctionne pas ?*/
     .card-group {
-        flex-direction: column; /* Passe les cartes en colonne */
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .card {
+        width: 100% !important;
+        flex: unset !important;
+        margin: 10px auto !important;
     }
 }
 
