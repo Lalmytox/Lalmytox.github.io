@@ -28,13 +28,27 @@ header img {
 /* ---------------- 2 -----------------*/
 /* -------------- cards --------------*/
 
+.card-group {
+    display: flex;
+    gap: 10px; 
+}
+
+
+@media screen and (max-width: 780px) and (min-width: 0) { /* Mode mobile (cartes empilées) */
+    .card-group {
+        flex-direction: column; /* Passe les cartes en colonne */
+    }
+}
+
 .card{ /*la card entière*/
     width : 80% ; 
     margin: 30px auto 0px auto ; 
     text-align: center;
     padding : 1%;
     box-shadow : 2px 2px 1px black;
-    background-color :rgb(255, 255, 255, 0.8)
+    background-color :rgb(255, 255, 255, 0.8);
+
+    flex: 1; /* Permet aux cartes de prendre un espace égal */
     
 }
 
